@@ -1,0 +1,10 @@
+.btt {
+  box-shadow: 2px 3px gray;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.success {
+  background: greenyellow;
+}
