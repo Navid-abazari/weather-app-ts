@@ -1,7 +1,7 @@
 function Header() {
   return (
-    <div>
-      <p>header</p>
+    <div className="center">
+      <p>مشاهده آب و هوا</p>
     </div>
   );
 }
