@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { weatherDetailsType } from "../utils/types";
+
+//weather app
 const Weather = () => {
   const [weatherDetails, setWeatherDetails] = useState<weatherDetailsType>();
   const [cityName, setCityName] = useState<string>("");
