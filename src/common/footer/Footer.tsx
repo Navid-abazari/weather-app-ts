@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="center">
+    <div id="footer">
       <p>© تمامی حقوق مادی و معنوی محفوظ است</p>
     </div>
   );

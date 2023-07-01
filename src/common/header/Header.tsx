@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <div className="center">
+    <div id="header">
       <p>مشاهده آب و هوا</p>
     </div>
   );
