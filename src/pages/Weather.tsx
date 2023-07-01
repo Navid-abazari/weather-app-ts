@@ -61,23 +61,45 @@ const Weather = () => {
           <table className="table">
             <thead>
               <tr>
-                <th>آب و هوای امروز</th>
+                <th>آب و هوای امروز شهر {cityName}</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="center">نام شهر: {cityName}</td>
+                <td className="center">
+                  دمای هوا:{" "}
+                  {weatherDetails && <p> {weatherDetails.main.temp}</p>}
+                </td>
+                <td className="center">
+                  دمای احساسی:{" "}
+                  {weatherDetails && <p> {weatherDetails.main.feels_like}</p>}
+                </td>
               </tr>
               <tr>
-                <td className="center">دمای هوا: {weatherDetails.main.temp}</td>
+                <td className="center">
+                  حداقل دما:{" "}
+                  {weatherDetails && <p> {weatherDetails.main.temp_min}</p>}
+                </td>
+                <td className="center">
+                  حداکثر دما:{" "}
+                  {weatherDetails && <p> {weatherDetails.main.temp_max}</p>}
+                </td>
+              </tr>
+              <tr>
+                <td className="center">
+                  فشار هوا:{" "}
+                  {weatherDetails && <p> {weatherDetails.main.pressure}</p>}
+                </td>
+                <td className="center">
+                  رطوبت نسبی:{" "}
+                  {weatherDetails && <p> {weatherDetails.main.humidity}</p>}
+                </td>
               </tr>
               <tr>
                 <td className="center">
                   طول جغرافیایی:{" "}
                   {weatherDetails && <p> {weatherDetails.coord.lon}</p>}
                 </td>
-              </tr>
-              <tr>
                 <td className="center">
                   عرض جغرافیایی:{" "}
                   {weatherDetails && <p> {weatherDetails.coord.lat}</p>}
